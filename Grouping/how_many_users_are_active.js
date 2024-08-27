@@ -1,5 +1,5 @@
 // how many users are active?
-db.users.aggregate()[
+db.users.aggregate([
     {
       $match: {
         isActive: true
@@ -8,4 +8,4 @@ db.users.aggregate()[
     {
       $count: 'activeUser'
     }
-  ]
+  ])

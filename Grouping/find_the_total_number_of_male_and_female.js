@@ -1,5 +1,5 @@
 // find the total number of male and female
-db.users.aggregate()[
+db.users.aggregate([
     {
       $group: {
         _id: "$gender",
@@ -8,4 +8,4 @@ db.users.aggregate()[
         }
         }
       }
-  ]
+  ])

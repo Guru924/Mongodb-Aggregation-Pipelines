@@ -1,6 +1,6 @@
 // what is the average age of all users
 
-db.users.aggregate()[
+db.users.aggregate([
     {
       $group: {
         _id: null,
@@ -9,4 +9,4 @@ db.users.aggregate()[
         }
       }
     }
-  ]
+  ])

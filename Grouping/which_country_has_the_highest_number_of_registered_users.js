@@ -1,5 +1,5 @@
 // which country has the highest number of registered users?
-db.users.aggregate()[
+db.users.aggregate([
     {
       $group: {
         _id: "$company.location.country",
@@ -16,4 +16,4 @@ db.users.aggregate()[
   {
     $limit: 1
   }
-]
+])

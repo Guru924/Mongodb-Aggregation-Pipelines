@@ -1,6 +1,6 @@
 // list the top 5 most common fruits among the users
 
-db.users.aggregate()[
+db.users.aggregate([
     {
       $group: {
         _id: "$favoriteFruit",
@@ -17,4 +17,4 @@ db.users.aggregate()[
     {
       $limit: 5
     }
-  ]
+  ])
